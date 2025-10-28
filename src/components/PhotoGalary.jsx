@@ -54,7 +54,7 @@ export default function PhotoGallery({ onNext }) {
       <div className="special w-full max-w-2xl mx-auto px-4">
         <Swiper
           loop={true}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 2000 }}
           pagination={{ clickable: true }}
           modules={[Autoplay, Pagination]}
           className="mySwiper rounded-2xl"

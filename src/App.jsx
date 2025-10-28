@@ -12,7 +12,7 @@ export default function BirthdayApp() {
   const [currentScreen, setCurrentScreen] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
 
-  const birthdayDate = new Date("2025-09-04T00:00:00")
+  const birthdayDate = new Date("2025-09-17T15:09:00")
   const [isBirthdayOver, setisBirthdayOver] = useState(new Date().getTime() >= birthdayDate.getTime())
 
   useEffect(() => {
@@ -55,7 +55,7 @@ export default function BirthdayApp() {
       </AnimatePresence>
 
       
-      {/* <motion.div
+       <motion.div
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{
@@ -64,7 +64,7 @@ export default function BirthdayApp() {
         }}
         className="fixed bottom-4 right-4 text-[13px] text-white/40 pointer-events-none z-50 font-light">
       Shivam Chaudhary
-      </motion.div> */}
+      </motion.div> 
     </div>
   )
 }
